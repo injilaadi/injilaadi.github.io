@@ -29,11 +29,41 @@
     margin-bottom:5%;
 }
 
-.nav-bar{
-    margin-left:40px;
-    margin-right:40px;
+.navBar{
+    font-style:Times New Roman;
+    color:black;
+    font-size:20px;
+    box-shadow:none;
+    border-bottom:2px solid black;
+    text-transform:uppercase;
+    margin:1px;
+    
 }
 
+.navBar h3{
+    margin:2%;
+    
+}
+nav button{
+    font-style:Times New Roman;
+    color:black;
+    font-size:20px;
+    box-shadow:none;
+    background:transparent;
+    border:none;
+    text-transform:uppercase;
+    
+  }
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    list-style:none;
+    margin:-2%;
+    font-family: Times 'Times New Roman', Times, serif;
+    text-transform:uppercase;
+    
+}
 .copyright{
     text-align:center;
 }
