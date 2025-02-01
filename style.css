@@ -12,6 +12,43 @@
     }
 }
 
+.proj-header{
+    display:flex;
+    flex-direction:row;
+    /* justify-content:left; */
+    list-style:none;
+    margin:-2%;
+    font-family: Times 'Times New Roman', Times, serif;
+    text-transform:uppercase;
+
+}
+
+.proj-title{
+    float: left;
+    font-size:20px;
+}
+
+
+.date{
+    float: left;
+    font-size: 20px;
+    margin-left: 30%;
+
+}
+.icons8{
+    display:flex;
+    flex-direction:row;
+    justify-content:left;
+    width: 40px;
+    height: 40px;
+    margin: 5%;
+}
+
+.icons8-git{
+    float: left;
+    width: 20px;
+    height: 20px;
+}
 .contact-section{
     display:flex;
     flex-direction:row;
@@ -21,6 +58,7 @@
     
 
 }
+
 .name{
     font-size:500%;
     margin: left 5%;
@@ -34,7 +72,9 @@
     font-size: 150%;
     margin-left:5%;
     margin-right:5%;
-    
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
     margin-bottom:5%;
 }
 
@@ -89,7 +129,7 @@ nav{
     font: size 300%;
     text-align: center;
     font-weight: bold;
-    margin-top:0px;
+    margin-top:2px;
 }
 
 p{
@@ -112,3 +152,13 @@ p{
 .highlight-white {
     background: linear-gradient(180deg,rgba(255,255,255, 0) 65%, #ffffff 65%);
 }
+nav button:hover{
+    box-shadow:none;
+    border-bottom:2px solid black;
+  }
+  
+  nav button.active{
+    box-shadow:none;
+    border-bottom:2px solid black;
+  }
+
