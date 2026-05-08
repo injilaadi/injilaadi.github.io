@@ -6,12 +6,12 @@
 
 
 :root {
-    --blue: #1e63d0;
-    --blue-dark: #14458f;
+    --blue: #11223e;
+    --blue-dark: #071832;
     --blue-light: #e8f0fc;
     --white: #ffffff;
     --text: #0f1f3d;
-    --muted: #5a6a85;
+    --muted: #2d3e5b;
 }
 
 html {
@@ -291,7 +291,7 @@ a:hover {
     border-radius: 8px;
     font-weight: 600;
     text-align: center;
-    transition: background 0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
 .project-link:hover {
@@ -367,7 +367,7 @@ a:hover {
 .resume-button {
   display: inline-block;
   padding: 7px 10px;
-  background: #2563eb;
+  background: #11223e;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -375,6 +375,6 @@ a:hover {
 }
 
 .resume-button:hover {
-  background: #1e40af;
+  background: #285193;
   transform: translateY(-2px);
 }
