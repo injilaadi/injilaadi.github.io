@@ -1,143 +1,134 @@
 <!DOCTYPE html>
- <!--
+<!--
     <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by mattbadal - Flaticon</a>
     <a target="_blank" href="https://icons8.com/icon/ZPhyC4qqS6S7/pink-cute-folder">Cute</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     <a target="_blank" href="https://icons8.com/icon/447/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     <a target="_blank" href="https://icons8.com/icon/v551nqGeHhGn/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     <a target="_blank" href="https://icons8.com/icon/3AvsrruafqJF/home">Home</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-
 -->
-
-
-<html>
-    
-
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <link rel = "stylesheet" href="style.css"/>
-    <link rel = "shortcut icon" href = "images/icons8-cute-64.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="images/icons8-cute-64.png" type="image/x-icon"/>
     <title>Injila Adil</title>
-
 </head>
 
 <body>
-    <div class="nav-bar">
-        <div class="float: left;">
-            <!--Add home,projects,work buttons-->
-            <a href = "index.html" class = "nav-item" title = "Home"><img src="" /></a>
-        </div>"
-    </div>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
+    <header class="nav-bar">
+        <div class="nav-brand">Injila Adil</div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <p class = "name">Injila Adil</p>
-    <nav class = "navBar">
-        
-        <h3 class = "about-me"><a href="#about"><button>About Me</button></a></h3>
-        <h3 class = "project"><a href="#projects"><button>Projects</button></a></h3>
-        <h3 class = "contact"><a href="#contact"><button>Contact</button></a></h3>
-        
-    </nav>
-    
-    <div id="about" class = "purple-background"
-        <div class = "margin">
-            <h2 class="section-title"><span class="highlight-white">About Me</span><img class = "title-icon" src = ""/></h2>
-            <p class = "intro">Hi, I'm Injila, originally from Cupertino, California, I later moved down to Irvine, California. I am currently a first-year Computer Science and 
-                Engineering major at the University of California-Irvine and I'm expected to graduate in 2028. I have a particular intererst in anything
-                AI/ML related as well as UI/UX. I'm familir with python, java, html/css/js, and swift. In my free time I love to code, watch documentaries, and spend time with
-                family and friends. Feel free to reach out to me through email at injilaadil@gmail.com.</p>
+    <section id="home" class="hero">
+        <h1 class="name">Injila Adil</h1>
+        <p class="tagline">Computer Science &amp; Engineering @ UC Irvine</p>
+    </section>
+
+    <section id="about" class="section section-light">
+        <h2 class="section-title"><span class="highlight">About Me</span></h2>
+        <div class="about-wrapper">
+            <div class="about-photo">
+                <img src="images/profile.jpg" alt="Injila Adil"
+                     onerror="this.style.display='none';this.parentElement.classList.add('photo-placeholder');"/>
+            </div>
+            <div class="about-text">
+                <p>Hi, I'm Injila! Originally from Cupertino, California, I later moved down to Irvine.
+                    I am currently a first-year Computer Science and Engineering major at the
+                    University of California, Irvine, expected to graduate in 2028.</p>
+                <p>I have a particular interest in anything AI/ML related as well as UI/UX. I'm
+                    familiar with Python, Java, HTML/CSS/JS, and Swift. In my free time I love to
+                    code, watch documentaries, and spend time with family and friends.</p>
+                <p>Feel free to reach out to me through email at
+                    <a href="mailto:injilaadil@gmail.com">injilaadil@gmail.com</a>.</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div id="projects" class ="purple-background">
-        <div class = "margin">
-            <h2 class="section-title"><span class="highlight-white">Projects</span><img class = "title-icon" src = ""/></h2>
-            
-            <section class = "proj-header">
-            <a
-                href="https://github.com/injilaadi/forager"><img class="icons8-git"
-                src="images/icons8-github.gif"/>
-            </a>
-            <!-- <p class="proj-title" style: "float: left;">Forager | Sustainable clothing finder<span class = "date" style:"float:right;" >&nbsp;Jan 2025</span> </p> -->
-            <span class="proj-title" style: >Forager | Sustainable fashion finder</span>
-            <span class="date">Jan 2025</span>
-                
-            </section>
-            <p class="proj-text">
+    <section id="projects" class="section section-blue">
+        <h2 class="section-title"><span class="highlight-light">Projects</span></h2>
+        <div class="project-scroll">
+            <article class="project-card">
+                <div class="project-card-header">
+                    <h3>Forager</h3>
+                    <span class="date">Jan 2025</span>
+                </div>
+                <p class="project-subtitle">Sustainable fashion finder</p>
                 <ul>
                     <li>Worked in a team of 2 to develop a fullstack website using Flask as a backend and ReactJs+Vite as the frontend.</li>
-                    <li>Implemented Google Cloud services </li>
-                    <li>Vertex AI API to search inputted images for information to find similar clothing from sustainable brands.</li>
-                  </ul>
-                
-            </p>
+                    <li>Implemented Google Cloud services.</li>
+                    <li>Used the Vertex AI API to search inputted images and find similar clothing from sustainable brands.</li>
+                </ul>
+                <a class="project-link" href="https://github.com/injilaadi/forager" target="_blank" rel="noopener">View on GitHub →</a>
+            </article>
 
-            <section class = "proj-header">
-                <a
-                    href="https://github.com/injilaadi/MoodToDoApp"><img class="icons8-git"
-                    src="images/icons8-github.gif"/>
-                </a>
-                <!-- <p class="proj-title" style: "float: left;">Forager | Sustainable clothing finder<span class = "date" style:"float:right;" >&nbsp;Jan 2025</span> </p> -->
-                <span class="proj-title" style: >MoodToDo App</span>
-                <span class="date">June 2023</span>
-                    
-                </section>
-                <p class="proj-text">
-                    <ul>
-                        <li>Worked in a team of 2 to develop a fullstack website using Flask as a backend and ReactJs+Vite as the frontend.</li>
-                        <li>Implemented Google Cloud services </li>
-                        <li>Vertex AI API to search inputted images for information to find similar clothing from sustainable brands.</li>
-                      </ul>
-                    
-                </p>
-            
-                <section class = "proj-header">
-                    <a
-                        href="https://github.com/injilaadi/ChaptersGAME"><img class="icons8-git"
-                        src="images/icons8-github.gif"/>
-                    </a>
-                    <!-- <p class="proj-title" style: "float: left;">Forager | Sustainable clothing finder<span class = "date" style:"float:right;" >&nbsp;Jan 2025</span> </p> -->
-                    <span class="proj-title" style: >ChaptersGame</span>
+            <article class="project-card">
+                <div class="project-card-header">
+                    <h3>MoodToDo App</h3>
+                    <span class="date">June 2023</span>
+                </div>
+                <p class="project-subtitle">Mood-based task tracker</p>
+                <ul>
+                    <li>Built a Swift iOS app that adapts a to-do list to the user's current mood.</li>
+                    <li>Designed a clean UI in SwiftUI with persisted task storage.</li>
+                    <li>Focused on a friendly, low-friction experience for daily use.</li>
+                </ul>
+                <a class="project-link" href="https://github.com/injilaadi/MoodToDoApp" target="_blank" rel="noopener">View on GitHub →</a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-card-header">
+                    <h3>ChaptersGame</h3>
                     <span class="date">May 2023</span>
-                        
-                    </section>
-                    <p class="proj-text">
-                        <ul>
-                            <li>Worked in a team of 2 to develop a fullstack website using Flask as a backend and ReactJs+Vite as the frontend.</li>
-                            <li>Implemented Google Cloud services </li>
-                            <li>Vertex AI API to search inputted images for information to find similar clothing from sustainable brands.</li>
-                          </ul>
-                        
-                    </p>
-                
-            
-            
+                </div>
+                <p class="project-subtitle">Interactive story-driven game</p>
+                <ul>
+                    <li>Developed a text-based adventure game with branching storylines.</li>
+                    <li>Implemented save/load logic and chapter progression.</li>
+                    <li>Wrote and structured original narrative content.</li>
+                </ul>
+                <a class="project-link" href="https://github.com/injilaadi/ChaptersGAME" target="_blank" rel="noopener">View on GitHub →</a>
+            </article>
 
+            <article class="project-card project-card-placeholder">
+                <div class="project-card-header">
+                    <h3>Your Next Project</h3>
+                    <span class="date">Coming soon</span>
+                </div>
+                <p class="project-subtitle">Starter card</p>
+                <ul>
+                    <li>Replace this card with a new project description.</li>
+                    <li>Add bullet points highlighting the stack and your role.</li>
+                    <li>Link out to the repo or live demo.</li>
+                </ul>
+                <a class="project-link" href="#" target="_blank" rel="noopener">View on GitHub →</a>
+            </article>
         </div>
-    </div>
+    </section>
 
-    <div id = "contact" class="purple-background"margin-bottom>
-        <h2 class="section-title"><span class="highlight-white">Contact</span><img class = "title-icon" src = ""/></h2>
-        <div class = "contact-section">
-            
-            <p class= "github"><a
-                href="https://github.com/injilaadi"><img class="icons8"
-                src="images/icons8-github.gif"/></a></p>
-            <p class= "linkedin"><a
-                href="https://www.linkedin.com/in/injila-adil-10b366214/"><img class="icons8"
-                src="images/icons8-linkedin-50.png"/></a></p>
-            <p class= "mail"><a
-                    href="mailto:injilaadil@gmail.com"><img class="icons8"
-                    src= "images/icons8-composing-mail-24.png"/></a></p>
+    <section id="contact" class="section section-light">
+        <h2 class="section-title"><span class="highlight">Contact</span></h2>
+        <div class="contact-section">
+            <a href="https://github.com/injilaadi" target="_blank" rel="noopener" aria-label="GitHub">
+                <img class="icons8" src="images/icons8-github.gif" alt="GitHub"/>
+            </a>
+            <a href="https://www.linkedin.com/in/injila-adil-10b366214/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img class="icons8" src="images/icons8-linkedin-50.png" alt="LinkedIn"/>
+            </a>
+            <a href="mailto:injilaadil@gmail.com" aria-label="Email">
+                <img class="icons8" src="images/icons8-composing-mail-24.png" alt="Email"/>
+            </a>
         </div>
-    </div>
+    </section>
 
-    <div class="footer"margin-bottom>
-
-        <p class= "copyright">Copyright © 2025 Injila Adil. All rights reserved.</p>
-    </div>
-
+    <footer class="footer">
+        <p class="copyright">Copyright © 2026 Injila Adil. All rights reserved.</p>
+    </footer>
 </body>
 </html>
