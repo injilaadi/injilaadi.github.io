@@ -365,16 +365,16 @@ a:hover {
 }
 
 .resume-button {
-  display: inline-block;
+  display: flex;
   padding: 10px 16px;
-  background: #2258c5;
+  background: #2563eb;
   color: white;
-  border-radius: 6px;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 6px;
+  transition: 0.2s;
 }
 
 .resume-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  background: #1e40af;
+  transform: translateY(-2px);
 }
