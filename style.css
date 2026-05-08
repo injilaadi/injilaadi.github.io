@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#style
+
 :root {
     --blue: #1e63d0;
     --blue-dark: #14458f;
@@ -366,7 +366,7 @@ a:hover {
 
 .resume-button {
   display: inline-block;
-  padding: 10px 16px;
+  padding: 7px 10px;
   background: #2563eb;
   color: white;
   text-decoration: none;
