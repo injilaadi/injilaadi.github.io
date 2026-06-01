@@ -161,7 +161,7 @@ a:hover {
     height: 260px;
     border-radius: 50%;
     overflow: hidden;
-    border: 6px solid var(--blue);
+    border: 6px solid var(--muted);
     background: var(--blue-light);
     box-shadow: 0 10px 30px rgba(30, 99, 208, 0.2);
 }
